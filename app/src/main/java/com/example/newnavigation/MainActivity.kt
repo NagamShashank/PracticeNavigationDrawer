@@ -39,7 +39,6 @@ class MainActivity : AppCompatActivity() {
         navigationView.setupWithNavController(navController)
 
     }
-
     override fun onSupportNavigateUp(): Boolean {
         val navController = findNavController(R.id.fragmentContainerView)
         return navController.navigateUp(appBarConfiguration)   || super.onSupportNavigateUp()
